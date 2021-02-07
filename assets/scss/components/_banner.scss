@@ -1,0 +1,253 @@
+#screen-shader {
+  display: none !important;
+}
+.banner {
+  position: relative;
+  .animation-span {
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    z-index: -1;
+  }
+  .banner-img {
+    position: relative;
+    margin-top: 72px;
+
+    img {
+      width: 50%;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+    }
+  }
+  .square1 {
+    width: 7px;
+    height: 7px;
+    top: 200px;
+    left: 150px;
+    background-color: #00a4ff;
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, 0.25);
+    animation: animationFramesOne 12s infinite alternate;
+    z-index: 1;
+    position: absolute;
+  }
+  .square2 {
+    top: 150px;
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.25);
+    animation: animationFramesTwo 18s infinite alternate;
+    z-index: 1;
+    position: absolute;
+  }
+  .square3 {
+    bottom: 150px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5520;
+    box-shadow: 0px 6px 13px 0px rgba(255, 85, 32, 0.25);
+    animation: animationFramesOne 12s infinite alternate;
+    z-index: 1;
+    position: absolute;
+  }
+  .square4 {
+    width: 10px;
+    height: 10px;
+    right: 50%;
+    bottom: 200px;
+    background-color: #0000fe;
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, 0.25);
+    animation: animationFramesTwo 18s infinite alternate;
+    z-index: 1;
+    position: absolute;
+  }
+  @keyframes animationFramesOne {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+      transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+      transform: translate(111px, 72px) rotate(72deg);
+    }
+    60% {
+      transform: translate(93px, 122px) rotate(108deg);
+    }
+    80% {
+      transform: translate(-70px, 72px) rotate(124deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+  @keyframes animationFramesTwo {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    20% {
+      transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+    }
+    40% {
+      transform: translate(141px, 72px) rotate(72deg) scale(1);
+    }
+    60% {
+      transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+    80% {
+      transform: translate(-40px, 72px) rotate(104deg) scale(1.1);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+  }
+
+  .container {
+    position: relative;
+    .banner-text {
+      max-width: 540px;
+      z-index: 1;
+      overflow: hidden;
+      padding: 130px 0px 180px;
+    }
+    .banner-tag {
+      padding-right: 30px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 45px;
+      background-color: #efeff0;
+
+      span {
+        color: #fff;
+        font-weight: 500;
+        padding: 12px 30px;
+        margin-right: 10px;
+        border-radius: 40px;
+        display: inline-block;
+        background-color: #0000fe;
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 1.625;
+      }
+      p {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 0;
+        display: inline-block;
+        font-family: "Roboto";
+        margin-bottom: 0;
+      }
+    }
+
+    h1 {
+      color: #000;
+      font-size: 58px;
+      font-weight: 700;
+      line-height: 1.2;
+      padding-bottom: 35px;
+    }
+    p {
+      color: #4f4f4f;
+      font-size: 20px;
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+    .banner-btn-wrap {
+      display: flex;
+      .banner-btn {
+        line-height: 55px;
+        margin-right: 35px;
+        a {
+          z-index: 10;
+          color: #fff;
+          width: 160px;
+          height: 55px;
+          display: block;
+          overflow: hidden;
+          font-weight: 700;
+          border-radius: 40px;
+          background-color: #ff5520;
+          z-index: 1;
+          position: relative;
+          text-decoration: none;
+          font-family: "Roboto";
+          text-align: center;
+        }
+      }
+      .banner-play {
+        z-index: 10;
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        line-height: 50px;
+        border-radius: 100%;
+        transition: 0.3s all ease-in-out;
+        background-color: #0000fe;
+        &:hover {
+          background-color: #dc3545;
+        }
+        a {
+          z-index: 10;
+          color: #fff;
+          width: 100%;
+          display: block;
+          text-decoration: none;
+          line-height: 50px;
+          text-align: center;
+          position: relative;
+
+          .btn-border {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            position: absolute;
+            animation-play-state: running;
+            border: 2px solid rgba(138, 136, 136, 0.32);
+            animation: border_animation 3.9s linear 0s infinite;
+          }
+          @keyframes border_animation {
+            0% {
+              transform: scale(1);
+              opacity: 0;
+            }
+            20% {
+              transform: scale(1.24);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(2.1);
+              opacity: 0;
+            }
+          }
+
+          .border-wrap2 {
+            animation-delay: 1.3s;
+          }
+          .border-wrap3 {
+            animation-delay: 2.6s;
+          }
+        }
+      }
+    }
+    .banner-mark {
+      left: 0;
+      bottom: -40px;
+      opacity: 0.05;
+      z-index: 2;
+      line-height: 1;
+      color: #00003d;
+      font-weight: 700;
+      font-size: 265px;
+      position: absolute;
+      font-family: "Fira Sans";
+    }
+  }
+}

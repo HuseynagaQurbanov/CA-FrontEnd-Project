@@ -1,0 +1,115 @@
+#testimonials {
+  margin-top: 150px;
+  .section-title {
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 590px;
+    margin: 0 auto;
+    text-align: center;
+    .title-watermark {
+      left: 0;
+      right: 0;
+      top: -60px;
+      opacity: 0.04;
+      color: #53536c;
+      line-height: 1;
+      font-size: 100px;
+      font-weight: 900;
+      margin-bottom: 0;
+      text-align: center;
+      font-family: #0000fe;
+      position: absolute;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0000fe;
+      padding: 0px 15px;
+      position: relative;
+      font-family:#0000fe;
+    }
+    h2 {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.125;
+      padding: 15px 0px 20px;
+    }
+  }
+  .testimonial-box {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px 30px 25px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.07);
+
+    .testimonial-icon {
+      top: 15px;
+      right: 15px;
+      position: absolute;
+      i {
+        font-size: 30px;
+        line-height: 1;
+        color: #efefef;
+        transition: 0.3s all ease-in-out;
+      }
+    }
+    .testimonial-text {
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0000fe;
+        padding-bottom: 15px;
+        font-family: "Fira Sans"
+      }
+      p {
+        font-family:  sans-serif;
+        color: #666666;
+      }
+    }
+    .testimonial-author {
+      margin-top: 20px;
+      display: flex;
+      img {
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+        margin-right: 12px;
+        border-radius: 100%;
+      }
+      .testi-author-text {
+        display: block;
+        padding-top: 7px;
+        h4 {
+          margin-top: 0;
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+          line-height: 1.2;
+          font-size: 14px;
+          font-weight: 700;
+          font-family: "Roboto";
+          position: relative;
+          bottom: -9px;
+          font-family: sans-serif;
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
+        span {
+          color: #888888;
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0px 36px 20px 0px rgba(12, 12, 12, 0.07);
+      .testimonial-icon {
+        i {
+          color: #ff5520;
+        }
+      }
+    }
+  }
+}

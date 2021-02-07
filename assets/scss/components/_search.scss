@@ -1,0 +1,80 @@
+.search-form {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px 12px;
+  box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.05);
+  width: 52%;
+  height: 95px;
+  align-items: center;
+  margin-left: 89px;
+  bottom: -29px;
+  justify-content: space-between;
+  .banner-shape1,
+  .banner-shape2 {
+    position: absolute;
+  }
+  .banner-shape1 {
+    left: -20px;
+    z-index: -1;
+    top: -60px;
+  }
+  .banner-shape2 {
+    bottom: -60px;
+    right: -20px;
+    z-index: -1;
+  }
+  .banner-category {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 12px;
+      margin-left: 3px;
+    }
+
+    a {
+      color: #000;
+      font-family: "Fira Sans";
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .banner-search {
+    i {
+      margin-right: 5px;
+    }
+  }
+  .search-btn {
+    color: #fff;
+    height: 45px;
+    width: 160px;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    background-color: #0000fe;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main {
+  .select-apply-btn {
+    position: absolute;
+    top: 40px;
+    left: 94px;
+    p {
+      color: #000;
+      font-size: 15px;
+    }
+    a {
+      font-weight: 700;
+      margin-left: 8px;
+      color: #0000fe;
+      text-decoration: underline;
+    }
+  }
+}
