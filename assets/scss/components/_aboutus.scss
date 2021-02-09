@@ -1,0 +1,129 @@
+#about {
+  padding: 110px 0px;
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .about-img {
+      padding-left: 90px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .about-text {
+      .all-section-title {
+        text-align: left;
+        padding-top: 22px;
+      }
+      span{
+          color: blue;
+          font-size: 18px;
+          padding: 0px 2px;
+      }
+      h2{
+          font-size: 40px;
+          padding: 15px 0px 20px;
+      }
+
+      .about-page {
+        max-width: 500px;
+        line-height: 1.625;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e9f2;
+      }
+
+      .about-video {
+        display: flex;
+
+        .video {
+          position: relative;
+          width: auto;
+          height: 90px;
+          overflow: hidden;
+          border-radius: 5px;
+          margin-right: 25px;
+          text-align: center;
+          border-radius: 5px;
+
+          img {
+            max-width: 100%;
+          }
+
+          a {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            margin: 0 auto;
+            line-height: 45px;
+            border-radius: 100%;
+            background-color: #000;
+            border: 4px solid #fff;
+            transform: translateY(-50%);
+            transition: all 0.4s linear;
+            i {
+              display: inline-block;
+              transition: all 0.4s linear;
+              font-size: 20px;
+            }
+          }
+        }
+
+        .video-text {
+          padding-top: 8px;
+          max-width: 280px;
+          display: inline-block;
+
+          h3 {
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            padding-bottom: 8px;
+            font-family: "Fira Sans";
+            margin-bottom: 0;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+$breakpoint-tablet: 991px;
+
+@media (max-width: $breakpoint-tablet) {
+  #about {
+    padding: 80px 0 !important;
+  }
+  .about-img {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .about-video {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    .video-text {
+      padding-top: 24px !important;
+      p {
+        text-align: center !important;
+      }
+    }
+    .video {
+      margin-right: 0 !important;
+    }
+  }
+}
