@@ -29,17 +29,16 @@ a {
       font-family: "Fira Sans";
       position: absolute;
     }
-
-    span {
-      font-size: 18px;
-      font-weight: 700;
-      color: #000000;
+    .show-result-text {
+      font-size: 17px;
+      font-weight: 400;
+      color: #555555;
       padding: 0px 15px;
       position: relative;
       font-family: "Roboto";
     }
     h2 {
-      color: #000;
+      color: #555555;
       font-size: 40px;
       font-weight: 700;
       line-height: 1.125;
