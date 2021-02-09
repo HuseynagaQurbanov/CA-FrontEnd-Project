@@ -23,29 +23,37 @@ header {
 
   .navbar-nav {
     & > li {
-      margin-right: 55px;
+      margin-right: 75px;
       font-family: "Roboto";
       & > a::after {
-        top: 26px;
-        left: 25px;
-        width: 10px;
+        top: 28px;
+        left: 36px;
+        width: 0px;
         content: "";
         height: 5px;
         position: absolute;
-        border-radius: 100%;
+        border-radius: 26%;
         background-color: #0000fe;
         transition: 0.3s all ease-in-out;
       }
       & > a::before {
-        top: 26px;
-        left: 10px;
-        width: 10px;
+        top: 30px;
+        left: 9px;
+        width: 0px;
         content: "";
         height: 5px;
         position: absolute;
-        border-radius: 100%;
+        border-radius: 26%;
         background-color: #0000fe;
         transition: 0.3s all ease-in-out;
+      }
+      &:hover {
+        a::before {
+          width: 21px;
+        }
+        a::after {
+          width: 5px;
+        }
       }
     }
 
@@ -55,6 +63,7 @@ header {
       position: relative;
       color: #000000 !important;
       padding: 0px;
+      text-align: center;
     }
     .dropdown {
       &::after {
@@ -75,13 +84,9 @@ header {
         opacity: 0;
       }
       &:hover {
-        a::after {
-          width: 5px;
-        }
-
         .dropdown-menu {
           visibility: visible;
-          margin-top: 0px;
+          margin-top: 20px;
           opacity: 1;
         }
       }

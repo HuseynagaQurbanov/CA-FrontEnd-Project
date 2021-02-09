@@ -1,15 +1,15 @@
-#blog {
+.blog {
   padding-top: 75px;
   padding-bottom: 50px;
   background-color: #f7f7f7;
-   .section-title{
+  .section-title {
     margin-bottom: 40px;
     position: relative;
     max-width: 590px;
     margin: 0 auto;
     text-align: center;
-   }
-   .title-watermark{
+  }
+  .title-watermark {
     left: 0;
     right: 0;
     top: -60px;
@@ -22,26 +22,27 @@
     text-align: center;
     font-family: sans-serif;
     position: absolute;
-   }
-   .color{
+  }
+  .color {
     font-size: 18px;
     font-weight: 700;
     color: #0000fe;
     padding: 0px 15px;
     position: relative;
     font-family: sans-serif;
-   }
-   h2{
+  }
+  h2 {
     color: #000;
     font-size: 40px;
     font-weight: 700;
     line-height: 1.125;
     padding: 15px 0px 20px;
-   }
+  }
   .categories-item-box {
     margin: 0 auto;
     max-width: 370px;
     margin-bottom: 40px;
+    // background-color: $white-color;
     transition: 0.3s all ease-in-out;
 
     .categories-box {
@@ -90,7 +91,6 @@
             display: block;
             font-size: 16px;
             font-weight: 400;
-       
           }
         }
       }
